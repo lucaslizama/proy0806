@@ -1,6 +1,4 @@
 <?php
-    include "FabricaConexion.php";
-
     class Usuario {
         private $idusuario;
         public $nombre;
@@ -13,7 +11,7 @@
         }
 
         /*Valida la existencia del usuario*/
-        function VerificaUsuario() {
+        public function VerificaUsuario() {
             $fabrica = new FabricaConexion("localhost","root","","exportaciones");
             $conexion = $fabrica->CrearConexion();
 
@@ -26,6 +24,14 @@
 
             $conexion->close();
             $resultado->close();
+        }
+
+        public function ValidaLocal() {
+            if(strlen(trim($this->nombre)) == 0)
+                return false;
+            if(strlen(trim($this->clave)) == 0)
+                return false;
+            return true;
         }
     }
 ?>

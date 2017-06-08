@@ -1,4 +1,5 @@
 <?php
-    include "Constantes.php";
-    include PATH . "src/Usuario.php";
-    include PATH . "src/ValidaUsuario.php";
+    require_once "Constantes.php";
+    require_once CLASS_PATH . "/src/Usuario.php";
+    require_once CLASS_PATH . "/src/ValidaUsuario.php";
+?>

@@ -10,7 +10,7 @@
         <script src="js/index.js"></script>
     </head>
     <body>
-        <form>
+        <form method="GET">
             <div>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">    
@@ -21,6 +21,9 @@
             </div>
             <div>
                 <input type="button" id="enviar" onclick="" value="Enviar">    
+            </div>
+            <div id="mensaje">
+                
             </div>
         </form>
     </body>

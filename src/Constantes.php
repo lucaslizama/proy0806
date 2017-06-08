@@ -1,2 +1,3 @@
 <?php
-    define("PATH", $_SERVER["DOCUMENT_ROOT"] . "/proy0806");
+    define("CLASS_PATH", $_SERVER["DOCUMENT_ROOT"]);
+?>
